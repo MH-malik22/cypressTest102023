@@ -7,7 +7,6 @@
     "nonGlobalStepDefinitions": true,
     "step_definitions": "cypress/e2e/",
     "commonPath": "cypress/support/"
-  
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,9 +14,12 @@
   "author": "Malik",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.3.3"
+    "cypress": "^13.3.3",
+    "cypress-mysql": "^1.0.2"
   },
   "devDependencies": {
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mochawesome-reporter": "^3.6.1",
+    "mochawesome": "^7.1.3"
   }
 }
