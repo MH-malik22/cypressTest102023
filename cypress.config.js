@@ -1,8 +1,8 @@
 const { defineConfig } = require("cypress");
 const cucumber = require('cypress-cucumber-preprocessor').default
-const mysql = require('cypress-mysql');
-const { reject } = require("cypress/types/bluebird");
-const { result } = require("cypress/types/lodash");
+//const mysql = require('cypress-mysql');
+//const { reject } = require("cypress/types/bluebird");
+//const { result } = require("cypress/types/lodash");
 module.exports = defineConfig({
   projectId: 'wzn97t',
   chromeWebSecurity: false,
@@ -58,7 +58,7 @@ module.exports = defineConfig({
       // implement node event listeners here
       on('file:preprocessor',cucumber())
       require('cypress-mochawesome-reporter/plugin')(on);
-      mysql.configurePlugin(on);
+     // mysql.configurePlugin(on);
     },
     baseUrl: "https://demoqa.com/",
     specPattern:"cypress/e2e/Features/*.feature"
