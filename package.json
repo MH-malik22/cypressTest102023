@@ -10,13 +10,14 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:chrome":"cypress run --browser chrome --spec cypress/e2e/Features/*.feature",
-    "cypress:edge":"cypress run --browser edge --spec cypress/e2e/Features/*.feature"
+    "cypress:chrome": "cypress run --browser chrome --spec cypress/e2e/Features/*.feature",
+    "cypress:edge": "cypress run --browser edge --spec cypress/e2e/Features/*.feature"
   },
   "author": "Malik",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.3.3",
+    "chai": "^5.1.2",
+    "cypress": "^13.17.0",
     "cypress-mysql": "^1.0.2"
   },
   "devDependencies": {
