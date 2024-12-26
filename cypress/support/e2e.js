@@ -16,3 +16,11 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import 'cypress-mochawesome-reporter/register';
+
+// Alternatively you can use CommonJS syntax:
+//import sqlServer from 'cypress-sql-server';
+
+
+//sqlServer.loadDBCommands();
+
+

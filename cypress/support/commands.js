@@ -23,3 +23,22 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add('submitFormDetails',()=>
+    {
+            cy.get("#country").type("India")
+            cy.get(".suggestions ul li a").click()
+            cy.get(".btn-success").click()
+    })
+
+// Cypress.Commands.add("LoginAPI",()=> {
+
+//     cy.request("POST","https://rahulshettyacademy.com/api/ecom/auth/login",
+//     {"userEmail":"anshika@gmail.com","userPassword":"Iamking@000"}).
+//     then(function(response)
+//     {
+//         expect(response.status).to.eq(200)
+//        Cypress.env('token',response.body.token);
+//     })
+// })
